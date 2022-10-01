@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="search-results">
-      <ul>
+      <ul v-if="item">
         <li v-if="item.name">
           <span class="title">Name:</span>
           <span class="item">{{ item.name }}</span>
@@ -10,33 +10,33 @@
           <span class="title">Version:</span>
           <span class="item">{{ item.version }}</span>
         </li>
-		<li v-if="item.author.name">
+        <li v-if="item.author">
           <span class="title">Author:</span>
           <span class="item">{{ item.author.name }}</span>
         </li>
-		<li v-if="item.date">
+        <li v-if="item.date">
           <span class="title">Date:</span>
           <span class="item">{{ item.date }}</span>
         </li>
-		<li v-if="item.publisher.email">
+        <li v-if="item.publisher">
           <span class="title">Publisher:</span>
           <span class="item">{{ item.publisher.email }}</span>
         </li>
-		<li v-if="item.description">
+        <li v-if="item.description">
           <span class="title">Description:</span>
           <span class="item">{{ item.description }}</span>
         </li>
-		<li v-if="item.keywords">
+        <li v-if="item.keywords">
           <span class="title">Keywords:</span>
           <span class="item">{{ item.keywords[0] }}</span>
         </li>
-		<li v-if="item.links.npm">
+        <li v-if="item.links.npm">
           <span class="title">Links:</span>
           <span class="item">{{ item.links.npm }}</span>
         </li>
-		<li v-if="item.links.homepage">
-		  <span class="title"></span>
-		  <span class="item">{{ item.links.homepage }}</span>
+        <li v-if="item.links">
+          <span class="title"></span>
+          <span class="item">{{ item.links.homepage }}</span>
         </li>
         <hr />
       </ul>
@@ -77,6 +77,6 @@ li {
 }
 
 hr {
-	width: 100%;
+  width: 100%;
 }
 </style>
