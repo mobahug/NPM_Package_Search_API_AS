@@ -6,7 +6,7 @@
 
 <script>
 // import HelloWorld from "./components/HelloWorld.vue";
-import SearchBrews from "./components/SearchBrews.vue";
+import SearchBrews from "./components/SearchPackages.vue";
 
 export default {
   name: "app",
