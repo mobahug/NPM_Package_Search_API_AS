@@ -1,24 +1,16 @@
-# composition-example
+# NPM SEARCH API
 
-## Project setup
-```
-npm install
-```
+## Features:
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Using the NPM.io API to fetch out informations using search bar.
+After search listing the result packages.
+By clicking to the ***More*** button it will show the selected packages only with more informations.
+By clicking to ***Go Back*** button we can go back to the search results to browse some other packages.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Usage:
 
-### Lints and fixes files
-```
-npm run lint
-```
+After cloning the repo use:
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+         npm run serve
+
+<img height="540em" src="https://user-images.githubusercontent.com/83179142/193396916-0c4d9bc1-731d-40e6-9499-e9376ee788af.gif">
