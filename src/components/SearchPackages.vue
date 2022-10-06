@@ -55,7 +55,7 @@ import useItemList from "../composition/item-list";
 import { createComponent } from "@vue/composition-api";
 import Package from "./Package.vue";
 import { ref } from "@vue/composition-api";
-import PackageComponent from "./packageComponent.vue";
+import PackageComponent from "./PackageComponent.vue";
 
 export default createComponent({
   components: { Package, PackageComponent },
@@ -79,9 +79,9 @@ export default createComponent({
       fetching,
       item,
       selectItem,
-      goBack,
+      goBack
     };
-  },
+  }
 });
 </script>
 
