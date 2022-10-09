@@ -63,7 +63,7 @@ export default createComponent({
     const item = ref(null);
     const selectItem = packages => {
       item.value = packages;
-      console.log(item);
+      console.log(item.value);
     };
     const goBack = () => {
       item.value = null;
